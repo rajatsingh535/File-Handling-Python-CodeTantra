@@ -5,8 +5,14 @@ with open(filename, "r") as f:
 for line in lines:
     reversed_lines = line.strip()[::-1]
     print(reversed_lines)
+
+
+
+
 # Program 2: Copy Content from One File to Another File
+
 # Method 1: Using a Loop to Read and Write Line by Line
+
 fin = open("input4.txt", "r")
 fou = open("output4.txt", "w")
 
@@ -22,6 +28,8 @@ for i in data:
 
 fin.close()
 data.close()
+
+
 # Method 2: Using read() to Copy the Entire File
 with open("input4.txt", 'r') as fsrc:
     content = fsrc.read()
